@@ -4,7 +4,7 @@ FROM alpine:3.9
 MAINTAINER budongshu@haodf.com
 RUN apk --no-cache add wget
 RUN  mkdir -p /p8s
-RUN  wget ftp://ftp.gnu.org/gnu/gcc/gcc-6.3.0/gcc-6.3.0.tar.gz && \
-     mv gcc-6.3.0.tar.gz /p8s/
+RUN https://github.com/grafana/grafana-image-renderer/releases/download/v2.0.0/plugin-linux-x64-glibc.zip && \
+     mv  plugin-linux-x64-glibc.zip  /p8s/`
      
      
